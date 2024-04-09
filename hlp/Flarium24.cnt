@@ -1,0 +1,29 @@
+:Base Flarium24.hlp
+:Title Iterations et Flarium24
+1 Flarium24 Topics
+2 Welcome=HIDR_DOC1TYPE
+2 Overview=overview_topic
+2 Features and Capabilities=features_topic
+2 Selecting an equation=selecting_topic
+2 Zooming in and out=zooming_topic
+2 Drawing Julia set fractals=julia_topic
+2 Filters=filters_topic
+2 Tips for using filters=filter_tips
+2 Unique Formulae Dialog=Unique
+1 Menus
+2 File menu=menu_file
+2 Draw menu=menu_draw
+2 Attractor menu=menu_attractors
+2 Filter-1=menu_filter-1
+2 Filter-2=menu_filter-2
+2 Filter-3=menu_filter-3
+2 Color menu=menu_color
+2 F-Dimension=menu_f-dimension
+2 Image menu=menu_image
+2 View menu=menu_view
+2 Window menu=menu_window
+2 Help menu=menu_help
+1 Formulae
+2 Latoocarfian Formulae=Latoocarfian
+2 2D Attractor Formulae=2D Attractors
+2 3D Attractor Formulae=3D Attractors

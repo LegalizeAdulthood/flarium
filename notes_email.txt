@@ -1,0 +1,118 @@
+<HTML>
+Kal Griott wrote:
+<BLOCKQUOTE TYPE=CITE>I realize my request was pretty vague; so I'll try
+to ask specific questions
+<BR>as they come up in my explorations of your program.
+<BR>So here's the first batch:
+<BR>1.)Define "Attractors" and how they function in rendering the equation
+into
+<BR>an image. Also can I "draw" an Attractor?</BLOCKQUOTE>
+I'm not quite sure what you mean by "draw" an attractor.
+
+<P>The attractor images are simply plotting the points of the orbits of
+some 2D and 3D formulae. The definition of an attractor would be a point
+which the iterative formula&nbsp; is trying to reach.&nbsp; The filter
+69, clouds method filter, plots the points of the iterative Mandelbrot
+and Newton type formulae.&nbsp; If you choose formula 17, the Generalized
+Newton,&nbsp; and apply filter 69 to it, you will notice there are three
+distinct areas where the points are drawn.&nbsp; These points are near
+the three attractor points for the 3rd order Newton.
+
+<P>For the 2D and 3D attractors, the formula may be shown in the menu item.&nbsp;
+Also a more complete formula list of for the 2D and 3D attractors are in
+the help files under "Formulae".&nbsp; For the attractors, random numbers
+are first chosen for the coeficients.&nbsp; Then the Lyanpunov exponent
+is calculated for about the first 1000 or 10000 points. If the Lyanpunov
+exponent is within a certain range, then the formula is usually chaotic,&nbsp;
+in other words the formula will have lots of orbits to plot within the
+view area.&nbsp; With most random coeficients, the formula wll have no
+orbits and are not chaotic.&nbsp; They will simply shoot out into space
+and never come back.&nbsp; The 2D attractors have X and Y components whereas
+the 3D attractors have X, Y, and Z parameters.&nbsp; When you draw an attractor,
+you may notice a number such as L=0.353739 appear in the window title bar.&nbsp;
+The "L" represents the Lyanpunov exponent.&nbsp; For more info on these
+types of attractors, you should visit Sprotts web page at&nbsp; <A HREF="http://sprott.physics.wisc.edu/fractals.htm">http://sprott.physics.wisc.edu/fractals.htm</A>
+<BR>&nbsp;
+<BLOCKQUOTE TYPE=CITE>2.)Can I "uncheck" selections in the Strands and
+Stalks Menus?&nbsp; I have
+<BR>changed from one selection to another, but have not discovered another
+way
+<BR>of undoing a selection here.</BLOCKQUOTE>
+Sorry, there is currently no uncheck or undo for the Filters.&nbsp; This
+has been a complaint from several people. Its probably one I should implement
+in the next version.&nbsp;
+<BLOCKQUOTE TYPE=CITE>&nbsp;
+
+<P>>Most all of the images that use the filters need to have the
+<BR>>filter factors adjusted one way or another.
+<BR>3.) What is the range of adjustment?</BLOCKQUOTE>
+The filter factors can range very widely, such as 100 to .0000001.&nbsp;
+They are being used differently in about all of the filters.&nbsp; I tried
+to keep them as close to 1 as possible.
+<BR>&nbsp;
+<BLOCKQUOTE TYPE=CITE>&nbsp;
+
+<P>>Also you must increase the max
+<BR>>iteration when you start zooming into areas to increase the resolutions.
+<BR>4.)Again if default is 128 what is the range to Max and how does the
+N-Type
+<BR>Min come into play?</BLOCKQUOTE>
+The max iterations can range any where from a low number of 3 to a high
+number of about 2000.&nbsp;&nbsp; You can sometimes get some very interesting
+results with the stalks and bubbles filters with low iteration ranges between
+5 and 30, and the images will draw very fast.&nbsp; The high iteration
+values are needed for some zooms into the fractal images.
+
+<P>The N-Type min parameter is the Newton type methods minimum value.&nbsp;
+The default for the Flarium program is to generate most fractals with the
+Newton method.&nbsp; Instead of testing the orbit to exceed a radius value
+(or bailout), the method is testing if the orbit is less than the N-Type
+min parameter which is set to 1e-5 as the default.&nbsp; In other words
+it is searching for the orbits to got to zero before bailing out.&nbsp;
+Sometimes when you start zooming, you may notice little holes (or circles)
+in the images.&nbsp; If you decrease the N-Type min parameter to about
+1e-9, then the holes will go away.
+<BR>&nbsp;
+<BLOCKQUOTE TYPE=CITE>&nbsp;
+
+<P>5.)Define the Bailout function?&nbsp; In the Shakti parameter file I
+downloaded
+<BR>from Sharon's Site Bailout is set at 2; when I changed the value to
+the
+<BR>default 1000 and re-rendered the Image I could discern no change except
+<BR>possibly the "highlights" seemed slightly brighter.</BLOCKQUOTE>
+The bailout value is the diameter of the M-Set.&nbsp; The default value
+is 4.&nbsp; The M-Set is defined as all points that fall within a circle
+of radius 2 (or diameter of 4).&nbsp; The bailout parameter only applies
+to the M-Set type formula.&nbsp; The Shakti image was an N-Set type formula,
+so the bailout value should not have been applicable.
+
+<P>In some filters such as the stalks and the biomorphs, increasing the
+bailout from 4 to about 100000 will give a a much sharper (or pointier)
+stalk.
+
+<P>With the default N-Set type images, there is no diameter, the orbits
+will go to infinity (or the max double precision floating point number).&nbsp;
+When they reach infinity, they will bail out simply because the computer
+thinks that infinity minus infinity is zero.
+
+<P>Hope this helps some...........
+<BLOCKQUOTE TYPE=CITE>&nbsp;
+
+<P>I know this is basic stuff for you but if you can bear with me for a
+little
+<BR>while I promise you Images you'll pleased with and I'll try not to
+ask too
+<BR>many questions at one time. :-)
+
+<P>Thanks!
+<BR>KAL
+<BR>kgriott@earthlink.net
+<BR><A HREF="http://www.geocities.com/SoHo/4987/">http://www.geocities.com/SoHo/4987/</A></BLOCKQUOTE>
+&nbsp;
+
+<P>--
+<BR>Stephen C. Ferguson
+<BR>Iterations et Flarium24
+<BR>http://home1.gte.net/itriazon/
+<BR>&nbsp;</HTML>

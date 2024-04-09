@@ -12,7 +12,7 @@ Project's tools are:
 			"<Component 0xa>" with flags ""
 
 Creating command line "rc.exe /l 0x409 /fo"Release/Flarium24.res" /d "NDEBUG" "E:\FRACTALS\Flarium24\Flarium24.rc"" 
-Creating temp file "C:\WINDOWS\TEMP\RSP22D3.TMP" with contents <vfw32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Release/Flarium24.pdb" /machine:I386 /out:"Release/Flarium24.exe" 
+Creating temp file "C:\WINDOWS\TEMP\RSP1331.TMP" with contents <vfw32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Release/Flarium24.pdb" /machine:I386 /out:"Release/Flarium24.exe" 
 .\Release\Affine.obj
 .\Release\BGColor.obj
 .\Release\Clouds.obj
@@ -48,7 +48,7 @@ Creating temp file "C:\WINDOWS\TEMP\RSP22D3.TMP" with contents <vfw32.lib /nolog
 .\Release\Unique.obj
 .\Release\Xysize.obj
 .\Release\Flarium24.res>
-Creating command line "link.exe @C:\WINDOWS\TEMP\RSP22D3.TMP" 
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP1331.TMP" 
 Compiling resources...
 Linking...
 

@@ -749,7 +749,7 @@ CAPTION "About Flarium24"
 FONT 8, "MS Sans Serif"
 BEGIN
     ICON            IDR_FLARIUTYPE,IDC_STATIC,29,42,20,20
-    LTEXT           "Flarium24 Version 8.8",IDC_STATIC,63,18,79,8,
+    LTEXT           "Flarium24 Version 8.9",IDC_STATIC,63,18,79,8,
                     SS_NOPREFIX
     DEFPUSHBUTTON   "OK",IDOK,170,9,32,14,WS_GROUP
     LTEXT           "Iterations et Flarium24",IDC_STATIC,51,6,73,8
@@ -1224,6 +1224,7 @@ BEGIN
     BUTTON      ID_DRAW_MSETMETHOD
     BUTTON      ID_DRAW_FSET
     SEPARATOR
+    BUTTON      ID_VIEW_NEW
     BUTTON      ID_DRAW_ABORT
     BUTTON      ID_IMAGE_SIZE
     BUTTON      ID_IMAGE_PARAMS
@@ -1383,6 +1384,7 @@ STRINGTABLE DISCARDABLE
 BEGIN
     ID_IMAGE_SIZE           "XY Diminsions\nXY Diminsions"
     ID_VIEW_MANDEL          "Draw Pattern\nDraw Pattern"
+    ID_VIEW_NEW             "New window on zoom mode\nNew window on zoom mode"
     ID_DRAW_ABORT           "Abort\nAbort"
     ID_DRAW_INVERT          "Inside-Out\nInside-Out"
 END

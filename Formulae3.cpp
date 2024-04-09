@@ -155,8 +155,7 @@ void CFlarium24View::Formulae3()
 				y = temp*y+rmu1;
 				u = temp*u+rmu2;
 				w = temp*w+rmu3;
-				dzx = x;
-				dzy = u;
+				z = cmplx(x, u);
 				if (nFilter) Delta_z();
 			}
 			z = cmplx(x, u);
@@ -182,8 +181,7 @@ void CFlarium24View::Formulae3()
 				y = temp*y+rmu1;
 				u = temp*u+rmu2;
 				w = temp*w+rmu3;
-				dzx = u;
-				dzy = w;
+				z = cmplx(u, w);
 				if (nFilter) Delta_z();
 			}
 			z = cmplx(u, w);
@@ -209,8 +207,7 @@ void CFlarium24View::Formulae3()
 				y = temp*y+rmu1;
 				u = temp*u+rmu2;
 				w = temp*w+rmu3;
-				dzx = y;
-				dzy = w;
+				z = cmplx(y, w);
 				if (nFilter) Delta_z();
 			}
 			z = cmplx(y, w);
@@ -236,8 +233,7 @@ void CFlarium24View::Formulae3()
 				y = temp*y+rmu1;
 				u = temp*u+rmu2;
 				w = temp*w+rmu3;
-				dzx = u;
-				dzy = y;
+				z = cmplx(u, y);
 				if (nFilter) Delta_z();
 			}
 			z = cmplx(u, y);
@@ -263,8 +259,7 @@ void CFlarium24View::Formulae3()
 				y = temp*y+rmu1;
 				u = temp*u+rmu2;
 				w = temp*w+rmu3;
-				dzx = x;
-				dzy = w;
+				z = cmplx(x, w);
 				if (nFilter) Delta_z();
 			}
 			z = cmplx(x, w);
@@ -290,8 +285,7 @@ void CFlarium24View::Formulae3()
 				y = temp*y+rmu1;
 				u = temp*u+rmu2;
 				w = temp*w+rmu3;
-				dzx = x;
-				dzy = y;
+				z = cmplx(x, y);
 				if (nFilter) Delta_z();
 			}
 			z = cmplx(x, y);

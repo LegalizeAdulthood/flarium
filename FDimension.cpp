@@ -80,12 +80,14 @@ void CFlarium24View::FDimension()
 						y_rmax = pYTemp[i2];
 				}
 
+				/*
 				if (NMAX >= 128 && nCount++ < 5)
 				{			
 					sprintf (cstr, "NMAX = %d, x_rmin=%f, x_rmax=%f, y_rmin=%f, y_rmax=%f",
 						NMAX, x_rmin, x_rmax, y_rmin, y_rmax);
 					AfxMessageBox(cstr);
 				}
+				*/
 
 				x_mean = x_mean / NMAX;
 				y_mean = y_mean / NMAX;
@@ -131,13 +133,14 @@ void CFlarium24View::FDimension()
 				nDIter_x = 0;
 				denominator = log((double)(1.0/(double)NMAX));
 				//while (fabs(da - dm) > .0001 && nDIter_x++ < NMAX-2)
-				while (fabs(da - dm) > .0001 && nDIter_x++ < 10000)
+
+				//while (fabs(da - dm) > .0001 && nDIter_x++ < 10000)
 				{
 					// Calculate Fractal Dimension (real)
 					da = dm;
 					cFDx = (cRng_x/(cx_std*cNMAX*cFDx)).clog()/denominator;
 					dm = cFDx.real();
-					if (nDIter_x == 1)
+					//if (nDIter_x == 1)
 						dFDx_0 = 2.0 - dm;
 				}
 
@@ -156,13 +159,13 @@ void CFlarium24View::FDimension()
 				nDIter_y = 0;
 				denominator = log((double)(1.0/(double)NMAX));
 				//while (fabs(da - dm) > .0001 && nDIter_y++ < NMAX-2)
-				while (fabs(da - dm) > .0001 && nDIter_y++ < 10000)
+				//while (fabs(da - dm) > .0001 && nDIter_y++ < 10000)
 				{
 					// Calculate Fractal Dimension (real)
 					da = dm;
 					cFDy = (cRng_y/(cy_std*cNMAX*cFDy)).clog()/denominator;
 					dm = cFDy.real();
-					if (nDIter_y == 1)
+					//if (nDIter_y == 1)
 						dFDy_0 = 2.0 - dm;
 				}
 

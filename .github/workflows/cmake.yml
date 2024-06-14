@@ -17,4 +17,4 @@ jobs:
         submodules: true
 
     - name: Run Workflow
-      run: cmake --workflow --preset ci-${{matrix.preset}}
+      run: cmake --workflow --preset default

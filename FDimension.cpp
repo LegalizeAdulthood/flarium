@@ -14,7 +14,7 @@
 
 void CFlarium24View::FDimension()
 {
-		static nCount = 0;
+		static int nCount = 0;
 
 		//if (i >= NMAX)
 			//i = NMAX - 1;

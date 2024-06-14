@@ -3509,7 +3509,7 @@ void CFlarium24View::OnUpdateDrawInvert(CCmdUI* pCmdUI)
 	pCmdUI->SetCheck(bInvertFractal);
 }
 
-long CFlarium24View::OnApply_ShiftView(UINT wParam, LONG lParam)
+LRESULT CFlarium24View::OnApply_ShiftView(WPARAM wParam, LPARAM lParam)
 {
 	if (dim.cx > 1024 || dim.cy > 1024)
 		return 0L;
@@ -3792,7 +3792,7 @@ void CFlarium24View::OnUpdateShiftStart(CCmdUI* pCmdUI)
 	pCmdUI->Enable(bInitialized);
 }
 
-void CFlarium24View::OnTimer(UINT nIDEvent) 
+void CFlarium24View::OnTimer(UINT_PTR nIDEvent) 
 {
 	if (!bDraw)
 	{
@@ -3858,7 +3858,7 @@ void CFlarium24View::OnUpdateImageColorparameters(CCmdUI* pCmdUI)
 //	}
 }
 
-long CFlarium24View::OnApply_GradView(UINT wParam, LONG lParam)
+LRESULT CFlarium24View::OnApply_GradView(WPARAM wParam, LPARAM lParam)
 {
 	if (dim.cx > 1024 || dim.cy > 1024)
 		return 0L;

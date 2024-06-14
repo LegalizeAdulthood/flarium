@@ -3266,7 +3266,7 @@ void CFlarium24View::OnUpdateDrawAffinetransformation(CCmdUI* pCmdUI)
 	pCmdUI->SetCheck(bAffine);	
 }
 
-long CFlarium24View::OnApply_AffineView(UINT wParam, LONG lParam)
+LRESULT CFlarium24View::OnApply_AffineView(WPARAM wParam, LPARAM lParam)
 {	
 	CFlarium24Doc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);

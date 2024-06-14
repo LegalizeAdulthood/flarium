@@ -508,9 +508,9 @@ public:
   
 	///////////////////////////////////////////////////////////////////
 	// Modeless Dialog message routines
-	long OnApply_GradView(UINT wParam, LONG lParam);
-	long OnApply_ShiftView(UINT wParam, LONG lParam);
-	long OnApply_AffineView(UINT wParam, LONG lParam);
+        LRESULT OnApply_GradView(WPARAM wParam, LPARAM lParam);
+        LRESULT OnApply_ShiftView(WPARAM wParam, LPARAM lParam);
+        LRESULT OnApply_AffineView(WPARAM wParam, LPARAM lParam);
   
 // Overrides
 	// ClassWizard generated virtual function overrides
@@ -673,7 +673,7 @@ protected:
 	afx_msg void OnUpdateColour6(CCmdUI* pCmdUI);
 	afx_msg void OnColour7();
 	afx_msg void OnUpdateColour7(CCmdUI* pCmdUI);
-	afx_msg void OnTimer(UINT nIDEvent);
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
 	afx_msg void OnShiftStart();
 	afx_msg void OnUpdateShiftStart(CCmdUI* pCmdUI);
 	afx_msg void OnDraw28();

@@ -1370,6 +1370,7 @@ CFlarium24Doc* CFlarium24View::GetDocument() // non-debug version is inline
 void CFlarium24View::OnInitialUpdate() 
 {
 	CScrollView::OnInitialUpdate();
+        SetScrollSizes(MM_TEXT, GetDocument()->GetDocSize());	
 	CFlarium24Doc* pDoc = GetDocument();
 
 	if (bNewView && bZoomingMode)
